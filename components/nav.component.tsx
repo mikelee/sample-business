@@ -2,8 +2,17 @@ import Link from 'next/link';
 
 import styles from '../styles/Nav.module.scss';
 
-const Nav = () => (
+import CloseIcon from './close-icon.component';
+
+interface Props {
+    setNavVisible: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Nav: React.FC<Props> = ({ setNavVisible }) => (
     <nav className={styles['nav']}>
+        <button className={styles['close-button']} onClick={() => setNavVisible(false)}>
+            <CloseIcon size={30} />
+        </button>
         <ul className={styles['nav-list']}>
             <li>
                 <Link href='/services'><a className={styles['nav-link']}>Services</a></Link>
