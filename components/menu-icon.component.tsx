@@ -1,5 +1,9 @@
-const MenuIcon = () => (
-    <svg width="160" height="80" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+interface Props {
+    size: number
+}
+
+const MenuIcon: React.FC<Props> = ({ size }) => (
+    <svg width={size} height={size / 2} viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_102_8)">
             <rect x="7" y="6" width="146" height="6" rx="3" fill="white"/>
         </g>
