@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 import MenuBar from './menu-bar.component';
 import Nav from './nav.component';
@@ -10,6 +10,10 @@ interface Props {
 const PageLayout: React.FC<Props> = ({ children }) => {
 
     const [navVisible, setNavVisible] = useState(false);
+    
+    useLayoutEffect(() => {
+        setNavVisible(false);
+    }, [children]);
 
     return (
         <>
