@@ -15,6 +15,9 @@ const Nav: React.FC<Props> = ({ setNavVisible }) => (
         </button>
         <ul className={styles['nav-list']}>
             <li>
+                <Link href='/'><a className={styles['nav-link']}>Home</a></Link>
+            </li>
+            <li>
                 <Link href='/services'><a className={styles['nav-link']}>Services</a></Link>
             </li>
             <li>
