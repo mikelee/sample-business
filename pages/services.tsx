@@ -8,7 +8,7 @@ const Services: React.FC = () => (
     <main className={styles['services']}>
         <h1 className={styles['title']}>Services</h1>
         {
-            services.map(service => <Card key={service.id} title={service.title} text={service.text} />)
+            services.map(service => <Card key={service.id} id={service.id} title={service.title} text={service.text} />)
         }
     </main>
 );
