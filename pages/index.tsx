@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             </main>
             <div className={styles['buttons']}>
                 <Link href='/services'><a className={styles['button']}>Services</a></Link>
-                <Link href='/location'><a className={styles['button']}>Find Us</a></Link>
+                <Link href='/hours-location'><a className={styles['button']}>Find Us</a></Link>
             </div>
         </div>
     );

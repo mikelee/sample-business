@@ -21,7 +21,7 @@ const Nav: React.FC<Props> = ({ setNavVisible }) => (
                 <Link href='/services'><a className={styles['nav-link']}>Services</a></Link>
             </li>
             <li>
-                <Link href='/location'><a className={styles['nav-link']}>Location</a></Link>
+                <Link href='/hours-location'><a className={styles['nav-link']}>Hours and Location</a></Link>
             </li>
         </ul>
     </nav>
