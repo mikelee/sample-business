@@ -9,7 +9,7 @@ interface Props {
 const MenuBar: React.FC<Props> = ({ setNavVisible }) => (
     <div className={styles['menu-bar']}>
         <h1 className={styles['name']}>Sample</h1>
-        <button className={styles['menu-button']} onClick={() => setNavVisible(true)}>
+        <button className={styles['menu-button']} onClick={() => setNavVisible(true)} data-testid='menu-button'>
             <MenuIcon size={60} />
         </button>
     </div>

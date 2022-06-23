@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
     return (
-        <div className={styles['home']}>
+        <div className={styles['home']} data-testid='home-page'>
             <main className={styles['main']}>
                 <h1 className={styles['title']}>Sample</h1>
                 <p className={styles['description']}>This is where you put a short description of your business or a slogan</p>

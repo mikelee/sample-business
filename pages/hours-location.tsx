@@ -1,7 +1,7 @@
 import styles from '../styles/HoursLocation.module.scss';
 
 const HoursLocation = () => (
-    <main className={styles['hours-location']}>
+    <main className={styles['hours-location']} data-testid='hours-location-page'>
         <section className={styles['hours']}>
             <h1 className={styles['hours-title']}>Hours</h1>
             <div className={styles['hours-table']}>

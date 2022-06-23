@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({ setNavVisible }) => (
-    <nav className={styles['nav']}>
+    <nav className={styles['nav']} data-testid='nav'>
         <button className={styles['close-button']} onClick={() => setNavVisible(false)}>
             <CloseIcon size={30} />
         </button>
